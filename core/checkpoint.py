@@ -14,7 +14,7 @@ import torch
 
 class CheckpointIO(object):
     def __init__(self, fname_template, data_parallel=False, **kwargs):
-        os.makedirs(os.path.dirname(fname_template), exist_ok=True)
+#        os.makedirs(os.path.dirname(fname_template), exist_ok=True)
         self.fname_template = fname_template
         self.module_dict = kwargs
         self.data_parallel = data_parallel
